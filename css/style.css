@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("C:/Users/DELL/Documents/Thesis/image/food.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 1550px 800px; 
+}
+header{
+    background-color:red;
+}
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:150px;
+    width: 400px;
+}
+.tab {
+    overflow: hidden;
+    background-color: #555555;
+  }
+  
+.tablink{
+    font-weight: bold;
+    color: orangered;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    float: left;
+    border:none;
+    background-color: inherit;
+}
+.tablink:hover
+{
+    color: gold;
+}
+
+.dropdown-content {
+    display: none;
+    position: inherit;
+    background-color: crimson;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+  .dropped:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}  
+
+  .drop{
+    font-weight: bold;
+    color: orangered;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    float: right;
+    border:none;
+    background-color: inherit;
+    padding-right: 30px;
+  }
+  .drop:hover{
+    color: gold;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  .dropped {
+    float:left ;
+    position: absolute;
+    display: inline-block;
+  }
