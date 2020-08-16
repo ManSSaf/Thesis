@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Foodies</title>
@@ -15,21 +16,38 @@
                     <button class="tablink" onclick="">Clients</button>
                     <button class="tablink" onclick="">Contact</button>
                     <div class="dropped">
-                        <button class="drop">Location</button>
-                        <div class="dropdown-content">
-                        <a href="#">Debrecen</a>
-                        <a href="#">Budapest</a>
-                        <a href="#">Pecs</a>
+                        <button onclick="myLocation" class="drop">Location <i class="arrowdown"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                        <a href="#D">Debrecen</a>
+                        <a href="#B">Budapest</a>
+                        <a href="#P">Pecs</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="backbody">
-    </section>
-    <section class="slider">
 
-    </section>
+    <script>
+
+        /*function myLocation() {
+            document.getElementById("myDropdown").classList.toggle("show");
+
+        }// When the user clicks on the button, toggle between hiding and showing the dropdown content 
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.drop')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        */
+    </script>
 </body>
 </html>
