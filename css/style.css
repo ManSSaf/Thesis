@@ -10,26 +10,30 @@ body{
     background-size: 1550px 800px; 
 }
 header{
-    background-color:red;
+    background-color:#ffffcc;
 }
 .logo img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height:150px;
-    width: 400px;
+    height:100px;
+    width: 300px;
 }
 .tab {
     overflow: hidden;
-    background-color: #555555;
+    background-color: #cccc99;
+    font-family: Arial, Helvetica, sans-serif ;
   }
   
-.tablink{
+
+
+.tab button{
     font-weight: bold;
-    color: orangered;
+    color: #cc9933;
     text-decoration: none;
+    text-align: center;
     transition: all 0.5s ease-in;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
@@ -37,51 +41,49 @@ header{
     border:none;
     background-color: inherit;
 }
+.dropped{
+  overflow: hidden;
+  float: left;
+}
 .tablink:hover
 {
-    color: gold;
+    color:#ffffcc;
 }
 
 .dropdown-content {
     display: none;
-    position: inherit;
-    background-color: crimson;
+    position: absolute;
+    overflow: auto;
+    background-color:#ffffcc;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
   }
-  .dropped:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #f1f1f1}  
+  
+  .dropdown-content a:hover {background-color: #cccc99}  
 
-  .drop{
-    font-weight: bold;
-    color: orangered;
-    text-decoration: none;
-    transition: all 0.5s ease-in;
-    font-size: 20px;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    float: right;
-    border:none;
-    background-color: inherit;
-    padding-right: 30px;
-  }
+  
   .drop:hover{
-    color: gold;
+    color:#ffffcc;
   }
 
   .dropdown-content a {
-    color: black;
+    color: #cc9933;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 20px;
+    font-size: 15px;
   }
-  .dropped {
-    float:left ;
-    position: absolute;
+
+  .dropped:hover .dropdown-content {
+    display: block;
+  }
+
+  .arrowdown {
+    border: solid #cc9933;
+    border-width: 0 3px 3px 0;
     display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
